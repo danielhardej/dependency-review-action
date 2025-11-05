@@ -548,7 +548,7 @@ function groupChanges(changes_1) {
                 if (change.package_url.length === 0) {
                     return true;
                 }
-                const changeAsPackageURL = (0, purl_1.parsePURL)(encodeURI(change.package_url));
+                const changeAsPackageURL = (0, purl_1.parsePURL)(change.package_url);
                 // We want to find if the licenseExclusion list contains the PackageURL of the Change
                 // If it does, we want to filter it out and therefore return false
                 // If it doesn't, we want to keep it and therefore return true
